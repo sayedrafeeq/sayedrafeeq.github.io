@@ -1,0 +1,1947 @@
+/************************************************
+Project Name : KoolBusiness
+Desgined By  : Sayed Rafeeq
+Developed By : Sayed Rafeeq
+Date         : November 2017
+
+/************************************************
+           ==Start Base css==
+*************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,500,600,700');
+
+/* CSS Reset */
+html, body {
+	width: 100%;
+	height: 100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background: #f5f7f9;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+a {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+p {
+    line-height: 22px;
+}
+
+img {
+    max-width: 100%;
+}
+
+select {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.margin-top30 {
+    margin-top: 30px;
+}
+
+
+/*Common*/
+
+.section {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.whitebg {
+    background: #fff;
+}
+
+
+/*Section Title*/
+
+.titleTop {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titleTop .subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #888;
+}
+
+.titleTop h3 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.titleTop h3 span {
+    color: #3498db;
+    font-weight: 200;
+}
+
+.titleTop h3:after {
+    background: #3498db;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    content: '';
+    margin-left: -40px;
+}
+
+.titleTop p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/************************************************
+           ==Tyography css==
+*************************************************/
+
+.margintop10 {
+    margin-top: 10px;
+}
+
+.margintop20 {
+    margin-top: 20px;
+}
+
+.margintop30 {
+    margin-top: 30px;
+}
+
+.margintop40 {
+    margin-top: 40px;
+}
+
+.margintop50 {
+    margin-top: 50px;
+}
+
+.marginbt10 {
+    margin-bottom: 10px;
+}
+
+.marginbt20 {
+    margin-bottom: 20px;
+}
+
+.marginbt30 {
+    margin-bottom: 30px;
+}
+
+.margin-left80 {
+    margin-left: 80px;
+}
+
+.mt-wrapper {
+    margin-bottom: 30px;
+}
+
+h1, .h1 {
+    font-size: 45px;
+}
+
+h2, .h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.button-orng {
+    background: #ffb72f;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffb72f), to(#ff9000));
+    background: -webkit-linear-gradient(#ffb72f, #ff9000);
+    background: -moz-linear-gradient(#ffb72f, #ff9000);
+    background: -ms-linear-gradient(#ffb72f, #ff9000);
+    background: -o-linear-gradient(#ffb72f, #ff9000);
+    background: linear-gradient(#ffb72f, #ff9000);
+    padding: 7px 20px;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.button-orng:hover {
+    text-decoration: none;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff9000), to(#ffb72f));
+    background: -webkit-linear-gradient(#ff9000, #ffb72f);
+    background: -moz-linear-gradient(#ff9000, #ffb72f);
+    background: -ms-linear-gradient(#ff9000, #ffb72f);
+    background: -o-linear-gradient(#ff9000, #ffb72f);
+    background: linear-gradient(#ff9000, #ffb72f);
+    color: #fff;
+}
+
+.sitebtn {
+    -webkit-box-shadow: 3px 4px rgba(255, 209, 95, 0.3);
+    -moz-box-shadow: 3px 4px rgba(255, 209, 95, 0.3);
+    box-shadow: 3px 4px rgba(255, 209, 95, 0.3);
+    background: #ff9000;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.sitebtn:hover {
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sitebtn i,
+.button-orng i {
+    padding-right: 7px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.grey_sitebtn {
+    -webkit-box-shadow: 3px 4px rgba(202, 255, 127, 0.3);
+    -moz-box-shadow: 3px 4px rgba(202, 255, 127, 0.3);
+    box-shadow: 3px 4px rgba(202, 255, 127, 0.3);
+    background: #444;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.grey_sitebtn:hover {
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+}
+
+.grey_sitebtn i {
+    padding-right: 7px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.gree_sitebtn {
+    -webkit-box-shadow: 3px 4px rgba(202, 255, 127, 0.3);
+    -moz-box-shadow: 3px 4px rgba(202, 255, 127, 0.3);
+    box-shadow: 3px 4px rgba(202, 255, 127, 0.3);
+    background: #77c30a;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.gree_sitebtn:hover {
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+}
+
+.gree_sitebtn i {
+    padding-right: 7px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+
+/*Shortcode*/
+
+.mt-shortcodes-d-styles {
+    padding-bottom: 30px;
+}
+
+.mt-shortcodes-default-custom-styles .row1 {
+    padding-bottom: 55px;
+}
+
+.mt-list-style h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #252525;
+}
+
+.mt-list-style ul {
+    padding: 0;
+    list-style: none;
+}
+
+.mt-list-style ul li {
+    line-height: 36px;
+}
+
+.mt-list-style ul li a {
+    color: #737373;
+    line-height: 36px;
+}
+
+.mt-list-style ul li span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.mt-list-style-blue {
+    color: #3498db;
+}
+
+
+/*Buttons*/
+
+.mt-style-button {
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.mt-style-button1 .mt-style-button {
+    background: #3498db;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.mt-style-button2 .mt-style-button {
+    background: #ddd;
+    color: #000000;
+    border-radius: 3px;
+}
+
+.mt-style-button3 .mt-style-button {
+    background: #fff;
+    color: #252525;
+    border: 2px solid #42454a;
+    border-radius: 3px;
+}
+
+.mt-style-button41 .mt-style-button {
+    background: #55adff;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.mt-style-button42 .mt-style-button {
+    background: #ffb72f;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.mt-style-button43 .mt-style-button {
+    background: #5fd33f;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.mt-style-button.large {
+    line-height: 51px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.mt-style-button.normal {
+    line-height: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.mt-style-button.small {
+    line-height: 30px;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.mt-style-button1 .mt-style-button:hover {
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mt-style-button2 .mt-style-button:hover {
+    background: #3498db;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.mt-style-button3 .mt-style-button:hover {
+    background: #3498db;
+    color: #fff;
+    border-radius: 3px;
+    border: 2px solid #3498db;
+    text-decoration: none;
+}
+
+.mt-style-button41 .mt-style-button:hover {
+    background: #333;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.mt-style-button42 .mt-style-button:hover {
+    background: #000;
+    color: #fff;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
+.mt-style-button43 .mt-style-button:hover {
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/************************************************
+           == App Box css==
+*************************************************/
+
+.breadCrumb {
+    text-align: right;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.breadCrumb a {
+    color: #fff;
+    display: inline-block;3
+    padding: 0 5px;
+}
+
+.breadCrumb span {
+    color: #3498db;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+
+/************************************************
+           == Featured Ads ==
+*************************************************/
+
+.itemgrid {
+    margin-bottom: 40px;
+    margin-top: 45px;
+}
+
+.gridlist {
+    position: relative;
+}
+
+.gridlist li {
+    margin-bottom: 40px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+
+.gridlist li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.gridlist li .adimg {
+    overflow: hidden;
+    position: relative
+}
+
+.gridlist li .adimg img {
+    display: block;
+    width: 100%;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.gridlist li .adimg .ribbon_3 {
+    left: -5px;
+}
+
+.gridlist li:hover .adimg img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.gridlist li .innerad {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.gridlist li h3 {
+    margin: 0;
+}
+
+.gridlist li h3 a {
+    display: block;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600
+}
+
+.gridlist li h3 a:hover {
+    color: #666;
+}
+
+.gridlist li .location {
+    color: #777;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.gridlist li .location i {
+    color: #3498db;
+}
+
+.gridlist li .price {
+    font-size: 30px;
+    color: #3498db;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.gridlist li .readmore {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.gridlist li .readmore:hover {
+    background: #333;
+}
+
+.gridlist li .readmore i {
+    margin-left: 7px;
+}
+
+
+/************************************************
+           == Sort by css==
+*************************************************/
+
+.sortbybar {
+    margin-bottom: 30px;
+    padding: 15px;
+
+}
+
+.listby {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 12px;
+    color: #333;
+}
+
+.listby:hover {
+    color: #000;
+}
+
+.sortbybar .input-group-addon {
+    background: none;
+    border: none;
+    padding: 0 10px 0 0;
+    font-weight: 700;
+    color: #333;
+}
+
+.sortbybar .form-control {
+    border-radius: 5px !important;
+    height: auto;
+    padding: 6px 15px;
+    border: 1px solid #eee;
+	box-shadow: none;
+	font-size: 13px;
+}
+.sortbybar .found {
+    text-align: right;
+    font-weight: 700;
+    color: #333;
+    margin-top: 5px;
+    line-height: 20px
+}
+
+.sortbybar .found strong {
+    display: block;
+    color: #333;
+}
+
+.sortbybar .foundsb {
+    text-align: left;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.sortbybar .foundsb strong {
+    display: block;
+    color: #fff;
+}
+
+.sortbybar .found.maptext {
+    text-align: center;
+    line-height: 20px;
+}
+
+
+/************************************************
+           == Search List css==
+*************************************************/
+
+.listpgWraper {
+    padding: 50px 0;
+    min-height: 400px;
+}
+
+.pageSearch {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px;
+}
+
+.pageSearch a.btn {
+    background: #3498db;
+    color: #fff;
+    padding: 13px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+    display: block;
+}
+
+.pageSearch a.btn i {
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.pageSearch a.btn:hover {
+    background: #666;
+}
+
+.searchform .row {
+    margin: 0 -5px;
+}
+
+.searchform .col-md-3,
+.searchform .col-md-2,
+.searchform .col-sm-3,
+.searchform .col-sm-2,
+.searchform .col-md-5 {
+    padding: 0 5px;
+}
+
+.searchform .form-control {
+    border-radius: 0;
+    height: auto;
+    padding: 13px 12px;
+    font-size: 16px;
+}
+
+.searchform select.form-control {
+    padding: 13px 12px;
+    background: #fff;
+    line-height: 45px;
+}
+
+.searchform .btn {
+    border-radius: 0;
+    background: #3498db;
+    font-size: 24px;
+    color: #fff;
+    padding: 7px 18px;
+}
+
+.searchform .btn:hover {
+    background: #444;
+}
+
+.searchfilter {
+    margin-bottom: 40px;
+}
+
+.searchfilter .catelist li a {
+    font-size: 13px;
+    font-weight: 400
+}
+
+
+/************************************************
+           == Sidebar css==
+*************************************************/
+
+.sidebar {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+}
+
+.sidebar .widget {
+    margin-bottom: 30px;
+}
+
+.sidebar .widget-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.sidebar .widget .input-group-btn>.btn {
+    background: #3498db;
+    border: none;
+    padding: 11px 12px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sidebar .widget .form-control {
+    border-radius: 3px;
+    height: auto;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    background-color: #fcfcfc;
+    border: 1px solid rgba(154, 153, 153, 0.3);
+}
+
+.optionlist {
+    list-style: none;
+}
+
+.optionlist li {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.optionlist li span {
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.optionlist li input[type=checkbox] {
+    display: none;
+}
+
+.optionlist li input[type=checkbox]+label {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(154, 153, 153, 0.3);
+    background: #efefef;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 2px;
+}
+
+.optionlist li input[type=checkbox]:checked+label:before {
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    color: #656565;
+    padding-left: 3px;
+    position: relative;
+    top: 2px;
+}
+
+.sidebar a {
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.searchnt .btn {
+    background: #3498db;
+    display: block;
+    border-radius: 0;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+.sidebar .gad {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social a {
+    color: #00a8ff;
+    font-size: 32px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.social a:hover {
+    color: #000;
+}
+
+
+/*Listing*/
+
+.searchList {
+    list-style: none;
+}
+
+.searchList li {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.searchList li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #3498db;
+}
+
+.searchList li .adimg img {
+    width: 100%;
+}
+
+.searchList li h3 {
+    margin: 0;
+}
+
+.searchList li h3 a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+}
+
+.searchList li .cateName {
+    margin: 10px 0;
+    color: #969595;
+    float: left;
+}
+
+.searchList li .cateName a {
+    color: #969595;
+}
+
+.adprice {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.adverify {
+    text-align: right;
+    border: 1px solid #ddd;
+    padding: 7px 15px;
+    display: inline-block;
+    background: #f8f8f8;
+    font-weight: 600
+}
+
+.adverify i {
+    font-size: 18px;
+    color: #3498db;
+}
+
+.editad {
+    border: 1px solid #ddd;
+    padding: 7px 15px;
+    display: inline-block;
+    background: #f8f8f8;
+    font-weight: 600;
+    color: #555;
+}
+
+.pendingad {
+    background: #FFDDDE;
+    border: 1px solid #FFC1C2;
+    color: 000;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 600;
+    padding: 7px 15px;
+}
+
+.searchList li a:hover {
+    color: #333;
+}
+
+.ribbon_3 {
+    position: absolute;
+    left: 10px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+
+.ribbon_3 span {
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #f14f3f;
+    background: linear-gradient(#f14f3f 0, #cb4335 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+    position: absolute;
+    top: 19px;
+    left: -21px;
+    text-transform: uppercase
+}
+
+.ribbon_3 span::after,
+.ribbon_3 span::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #a3362a;
+}
+
+.ribbon_3 span::before {
+    left: 0;
+    border-left: 3px solid #638908;
+    border-right: 3px solid transparent;
+}
+
+.ribbon_3 span::after {
+    right: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #638908;
+}
+
+.searchList li .location {
+    color: #000;
+    margin-top: 10px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.searchList li .location i {
+    color: #3498db;
+    margin-right: 3px;
+}
+
+.searchList li .vinfo {
+    color: #555;
+    margin-top: 10px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    border-right: 1px solid #ddd;
+    padding-right: 15px;
+}
+
+.searchList li .date {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.searchList li .listbtn {
+    margin-top: 10px;
+}
+
+.searchList li .listbtn a {
+    background: #3498db;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.searchList li .listbtn a i {
+    margin-left: 5px;
+}
+
+.searchList li .listbtn a:hover {
+    background: #333;
+    text-decoration: none;
+}
+
+.searchList li .listbtn .edit {
+    background: #3498db;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 7px 10px;
+    font-size: 16px;
+}
+
+.searchList li .listbtn .edit i {
+    margin: 0;
+}
+
+.searchList li p {
+    line-height: 22px;
+    color: #333;
+    margin: 0;
+}
+
+.searchList li .cateinfo {
+    color: #3498db;
+    margin: 10px 0;
+}
+
+.searchList li .minsalary {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 25px;
+    color: #a8d815;
+}
+
+.searchList li .minsalary span {
+    color: #999;
+    font-weight: 400;
+}
+
+
+/*Pagination*/
+
+.pagiWrap .showreslt {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.pagiWrap .pagination {
+    text-align: right;
+    margin: 0;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-radius: 0;
+}
+
+.pagination>.active>a {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #3498db;
+}
+
+.cargrid li {
+    padding: 0 15px;
+    background: none;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.cargrid li:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.cargrid li .gridint {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+.cargrid li .gridint:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #3498db;
+}
+
+.cargrid li .vinfo {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.cargrid li .adprice {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cargrid li .date {
+    margin-bottom: 15px;
+}
+
+.cargrid li .listbtn a {
+    display: block;
+    text-align: center;
+}
+
+
+/************************************************
+           == Job Detail css==
+*************************************************/
+
+.jbside {
+    background: #196577;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.advert-header {
+    background: #fff;
+    margin-bottom: 30px;
+    border: 1px solid #e3eaf1;
+}
+
+.jbside .adinfo {
+    padding: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.jbside .adinfo h2 {
+    font-size: 24px;
+    color: #444;
+}
+
+.jbside .ptext {
+    color: #ccc;
+    margin: 10px 0 15px 0;
+}
+
+.jbside .ptext i {
+    width: 20px;
+}
+
+.jbside .cateName {
+    float: left;
+    margin: 10px 0 0 20px
+}
+
+.jbside .adsalary {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.jbside .adsalary strong {
+    color: #fcff24;
+    font-size: 36px;
+    font-weight: 600;
+    display: block;
+    margin-top: 5px
+}
+
+.jbside .companyinfo {
+    text-align: right;
+}
+
+.jbside .companyinfo .companylogo {
+    float: right;
+    width: 75px;
+    background: #fff;
+    margin-left: 20px;
+    border: 5px solid #eee;
+}
+
+.jbside .companyinfo .companylogo img {
+    display: block;
+}
+
+.jbside .companyinfo .title a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #3498db;
+}
+
+.jbside .companyinfo .opening a {
+    color: #333;
+}
+
+.jbside h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+/*Candidate Info*/
+
+.advert-header .adinfo .candidateinfo .userPic {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #cbcbcb;
+    margin-right: 20px;
+    border: 5px solid #3498db;
+}
+
+.advert-header .adinfo .candidateinfo .title {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600
+}
+
+.advert-header .adinfo .candidateinfo .desi {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.advert-header .adinfo .candidateinfo .loctext {
+    line-height: 24px;
+    color: #555;
+    margin-top: 8px;
+}
+
+.advert-header .adinfo .candidateinfo .loctext i {
+    width: 20px;
+    color: #3498db;
+}
+
+.cadsocial {
+    margin-top: 10px;
+}
+
+.cadsocial a {
+    color: #666;
+    font-size: 24px;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.cadsocial a:hover {
+    color: #3498db;
+}
+
+.relatedJobs {
+    margin-bottom: 30px;
+}
+
+.relatedJobs h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+/*Buttons*/
+
+.adButtons {
+    padding: 0;
+}
+
+.adButtons a {
+    background: #fff;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 0;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.adButtons a.report {
+    background: #e01010;
+    color: #fff;
+}
+
+.adButtons a.apply {
+    background: #3498db;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.adButtons a.apply i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.adButtons a:hover {
+    background: #5e6a6d;
+    color: #fff;
+}
+
+.adButtons a.apply:hover {
+    background: #0689a9;
+    color: #fff;
+}
+
+.advert-header .contentbox {
+    padding: 25px;
+}
+
+.advert-header .contentbox h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.advert-header .contentbox p {
+    line-height: 24px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.carfeature {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.carfeature li {
+    margin-bottom: 20px;
+    line-height: 20px;
+    color: #2f3b3e
+}
+
+.carfeature li .feat {
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.carfeature li .feat:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.carfeature li img {
+    float: left;
+    margin-right: 10px;
+}
+
+.featchoose li {
+    margin-bottom: 10px;
+}
+
+.unorderlist li {
+    padding: 5px 0 5px 25px;
+    position: relative;
+    line-height: 24px;
+    color: #fff;
+}
+
+.unorderlist li:before {
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    color: #fcff24;
+    position: absolute;
+    left: 0;
+}
+
+
+/*Ad Info*/
+
+.advertdetail {
+    padding: 20px;
+}
+
+.advertdetail iframe {
+    width: 100%;
+    height: 250px;
+    border: none
+}
+
+.advertdetail h3 {
+    font-size: 18px;
+    color: #3498db;
+    font-weight: 700;
+}
+
+.jbdetail {
+    margin-top: 20px;
+}
+
+.jbdetail li {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.jbdetail li a {
+    display: block;
+    text-align: right;
+    color: #fff;
+    font-weight: 600;
+}
+
+.jbdetail li span {
+    display: block;
+    text-align: right;
+    color: #fff;
+    font-weight: 600;
+}
+
+.jbdetail li span.permanent {
+    color: #a8d815;
+}
+
+.jbdetail li span.contract {
+    color: #3498db;
+}
+
+.jbdetail li span.freelance {
+    color: #F07200;
+}
+
+/*Slider*/
+
+.adimages {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.slides {
+    list-style: none;
+}
+
+#carousel li,
+.slides li {
+    padding: 0 !important;
+}
+
+#carousel li:before,
+.slides li:before {
+    display: none;
+}
+
+#carousel img {
+    opacity: 0.4;
+}
+
+#carousel .flex-active-slide img {
+    opacity: 1;
+}
+
+.flexslider {
+    position: relative;
+}
+
+.flexslider .flex-direction-nav {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    width: 100%;
+}
+
+.flex-direction-nav li {
+    padding: 0 !important;
+}
+
+.flex-direction-nav li:before,
+.flex-direction-nav li:before {
+    display: none;
+}
+
+.flex-direction-nav .flex-nav-prev {
+    float: left;
+    margin-left: 15px;
+}
+
+.flex-direction-nav .flex-nav-next {
+    float: right;
+    margin-right: 15px;
+}
+
+.flex-direction-nav li a {
+    font-size: 36px;
+    color: #fff;
+}
+
+
+/************************************************
+           == Dashboard Page css==
+*************************************************/
+
+
+/*Form Panel*/
+
+.formpanel {
+    margin-top: 20px;
+}
+
+.formpanel .formrow {
+    margin-bottom: 15px;
+}
+
+.formpanel .form-control {
+    height: auto;
+    border-radius: 4px;
+    padding: 10px 13px;
+    border-color: #ddd;
+}
+
+.formpanel select.form-control {
+    padding: 13px 12px;
+    border-radius: 4px;
+    line-height: 45px;
+}
+
+.formpanel textarea.form-control {
+    height: 200px;
+}
+
+.jbside .form-control {
+    height: auto;
+    border-radius: 4px;
+    padding: 10px 13px;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: #f1f1f1;
+}
+
+.formpanel .btn {
+    width: 100%;
+    background: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.formpanel .btn:hover {
+    background: #0689a9;
+}
+
+
+/*******************
+	Override CSS
+*******************/
+.car-search {
+	position: relative;
+	background-color: #ffffff;
+	max-width: 1140px;
+	margin: -90px auto 0 auto;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.car-wrapper {
+    margin: 60px 0;
+}
+.car-wrapper  .col-md-8 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.masthead-text {
+    margin-top: 20px;
+}
+.pagiWrap {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.ui.menu {
+    font-size: 14px;
+}
+.ui.sub.header {
+    font-size: 15px;
+}
+.free-ad a {
+    font-size: 16px !important;
+}
+@media only screen and (min-width: 1200px) {
+    .ui.container {
+        width: 1170px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+.footer a {
+    font-size: 14px;
+}
+
+.copyright a {
+    font-size: 14px !important;
+}
+
+/*******************
+	Media Queries css
+*******************/
+
+/*******************
+	Monitor Screen
+*******************/
+
+@media screen and (max-width: 1024px) {
+    .usernav li a {
+        padding: 19px 14px
+    }
+    .jobslist li .applybtn {
+        margin-top: 15px;
+    }
+    .pageSearch a.btn {
+        margin-bottom: 15px
+    }
+}
+
+/*******************
+	Tablet Screen
+*******************/
+
+@media screen and (max-width: 990px) {
+    body {
+        font-size: 16px;
+    }
+    .searchblack .searchbar {
+        padding: 25px 10px;
+    }
+    .topbar-wrap .tpinfo a {
+        margin-bottom: 10px;
+    }
+    .header .logo {
+        margin-bottom: 15px;
+    }
+    .navbar-default {
+        float: none;
+    }
+    .three-plan li {
+        padding: 0 15px;
+        margin-top: 15px;
+    }
+    .three-plan ul {
+        background: none;
+    }
+    .main-plan {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+    .main-unit {
+        max-width: 240px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .about-wrap .aboutinfo {
+        max-width: none;
+        padding: 50px;
+    }
+    /*Search*/
+    .searchwrap {
+        padding: 40px 0;
+    }
+    .searchbar {
+        padding: 20px 5px 20px 5px;
+    }
+    .searchbar .form-control {
+        margin-bottom: 15px;
+    }
+    .searchbar .btn {
+        width: 100%;
+    }
+    ul.orderlist li {
+        float: none;
+        width: auto;
+    }
+    .optionlist li {
+        font-size: 14px;
+    }
+    .searchList li p {
+        font-size: 16px;
+    }
+    .sidebar a {
+        font-size: 16px;
+    }
+    .sidebar .social a {
+        font-size: 30px;
+    }
+    .pageTitle h1,
+    .breadCrumb {
+        text-align: center;
+    }
+    /*Ad detail*/
+    .adButtons a {
+        margin-top: 10px;
+    }
+    .advert-header .adinfo .adsalary {
+        text-align: left;
+        margin-top: 30px;
+    }
+    .advert-header .jobinfo .companyinfo {
+        text-align: left;
+        margin-top: 30px;
+        border-top: 1px solid #eee;
+        padding-top: 30px;
+    }
+    .whatList li {
+        margin-bottom: 30px;
+    }
+    .about-wraper h2 {
+        margin-top: 20px;
+    }
+    .postimg {
+        margin-top: 15px;
+    }
+    .blogGrid .postimg {
+        margin-top: 0;
+    }
+    .about-wraper,
+    .textrow {
+        padding: 50px 0;
+    }
+    .taglinewrap a {
+        text-align: center;
+    }
+    .taglinewrap a span {
+        line-height: 24px;
+    }
+}
+
+/*******************
+Large Mobile Screen
+*******************/
+
+@media screen and (max-width: 768px) {
+    .pagiWrap {
+        margin-bottom: 30px;
+    }
+    .jobButtons a {
+        font-size: 15px;
+        margin-right: 0px;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .catelist {
+        margin-bottom: 30px;
+    }
+    .main-plan .plan-price2 {
+        margin-left: 0px;
+        font-size: 44px;
+    }
+    .pagiWrap .showreslt {
+        margin-bottom: 10px;
+    }
+    .searchform .form-control {
+        margin-bottom: 15px;
+    }
+    .advert-header .jobinfo {
+        padding: 15px;
+    }
+    .advert-header .contentbox {
+        padding: 20px;
+    }
+    .employerList li {
+        width: 25%;
+    }
+    /*sidebar*/
+    .sidebar {
+        margin-top: 30px;
+    }
+    .text-right {
+        text-align: left;
+    }
+    /*Photo Streem*/
+    .photo-steam li {
+        width: 50%;
+    }
+    .appimg {
+        display: none;
+    }
+    .catelist li a {
+        padding: 5px 0;
+    }
+    .appwraper .appbtn a {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .pull-right {
+        float: none !important;
+    }
+    .sortbybar .input-group {
+        margin: 20px 0;
+    }
+    .sortbybar .found {
+        text-align: left;
+    }
+    .adprice {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .searchList li .text-right {
+        text-align: left;
+    }
+    .packageList li .packbox.select {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/*******************
+	Mobiles Screen
+*******************/
+
+@media screen and (max-width:600px) {
+    .about-wrap .aboutinfo {
+        padding: 30px;
+    }
+    .catelist li a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .jobButtons a {
+        display: block;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .searchwrap h3 {
+        font-size: 24px;
+    }
+    .searchList li .jobimg {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .advert-header .jobinfo .companyinfo,
+    .advert-header .jobinfo .candidateinfo,
+    .educationList li {
+        text-align: center;
+    }
+    .advert-header .jobinfo .companyinfo .companylogo,
+    .advert-header .jobinfo .candidateinfo .userPic,
+    .educationList li .date {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .advert-header .jobinfo .candidateinfo .userPic {
+        height: auto;
+    }
+    .employerList li {
+        width: 50%;
+    }
+    .appwraper .titleTop h3 {
+        font-size: 36px;
+    }
+    .appwraper {
+        padding-top: 50px;
+    }
+    .appimg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .searchList li .cateName,
+    .searchList li .location {
+        float: none;
+        margin: 10px 0
+    }
+}

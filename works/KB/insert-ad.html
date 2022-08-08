@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Site Properties -->
+    <title>Create your ad - KoolBusiness&trade; - High Quality Classifieds</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.min.css">
+	<!-- Include Quill CSS -->
+	<link href="https://cdn.quilljs.com/1.3.3/quill.snow.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/semantic.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/location.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!--Location States and Cities-->
+    <script>
+    $(document).ready(function() {
+        $(function() {
+            var loc = new locationInfo();
+            loc.getStates(101);
+        })
+    });
+    </script>
+</head>
+
+<body>
+    <!--Main Wrapper-->
+    <div class="main-wrap">
+        <!--Tapbar-->
+		<div class="ui inverted topbar">
+			<div class="ui container">
+				<div class="ui stackable divided grid">
+					<div class="eight wide column">
+						<div class="welcome-msg">
+							<span>Welcome to <strong>KoolBusiness </strong> -</span>
+							<span>High Quality Classifieds in INDIA.</span>
+						</div>
+					</div>
+					<div class="eight wide column right aligned">
+						<div class="flag-icons">
+							<strong>Language:</strong>
+							<i class="united states flag"></i><a class="ui" href="#">Enlgish</a>
+							<i class="india flag"></i><a class="ui item-inline" href="#"><img class="ui image" src="images/hindi-language.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!--/Tapbar End-->
+        <!--Header Area-->
+        <div class="ui menu header-area header-spacing">
+            <div class="ui container">
+                <div class="logo-area">
+                    <a href="index.html" class="header">
+						<img class="logo item" src="images/kool_business_logo.png">
+					</a>
+                </div>
+                <div class="right item header-right">
+                    <div class="ui horizontal list">
+                        <div class="item">
+                            <img class="ui mini circular image user-avatar" src="images/user-avatar.png">
+                            <div class="content">
+                                <div class="ui sub header my-account">
+                                    <a href="login.html">Sign In</a> <span class="line-sep">/</span>
+                                    <a href="sign-up.html">Sign UP</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="free-ad">
+						<a class="ui inverted white button large" target="_blank" href="https://play.google.com/store/apps/details?id=com.koolbusiness">DOWNLOAD APP</a>
+						<span class="free-add"><a class="ui item-inline" target="_blank" href="https://play.google.com/store/apps/details?id=com.koolbusiness"><img class="ui image" src="images/free-ad.png"></a></span>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!--/Header End-->
+        <!--Menu Area-->
+        <div class="ui inverted menu header-area menu-area">
+            <div class="ui container">
+                <a href="index.html" class="item menu-item">Home</a>
+                <a href="view-ads.html" class="item menu-item">View Ads</a>
+                <a href="insert-ad.html" class="item menu-item active">Insert Ad</a>
+                <a href="support.html" class="item menu-item">Support</a>
+                <a href="faq.html" class="item menu-item">FAQ's</a>
+            </div>
+        </div>
+        <!--Menu Area End-->
+        <!--Master Head-->
+        <div class="masthead-shadow">
+            <div class="ui inverted vertical subhead herohead center aligned segment">
+                <div class="ui text container masthead-text">
+                    <h2>CREATE YOUR <span>ADVERTISEMENT</span></h2>
+                </div>
+            </div>
+        </div>
+        <!--/Master Head End-->
+        <!--Main Text-->
+        <div class="ui main text container">
+            <!--Breadcrumb-->
+            <div class="ui large breadcrumb">
+                <a class="section" href="index.html">KoolBusiness.com</a>
+                <i class="right chevron icon divider"></i>
+                <a class="section" href="insert-ad.html">Insert Ad</a>
+            </div>
+            <!--/Breadcrumb-->
+            <div class="ui stackable grid content-wrap">
+                <!--Single Ad Text Here-->
+                <div class="twelve wide column">
+                    <!--Form Steps-->
+                    <div class="ui ordered steps">
+                        <div class="active step">
+                            <div class="content">
+                                <div class="title">Create your ad</div>
+                                <div class="description">Create your advertisement</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content">
+                                <div class="title">Preview your ad</div>
+                                <div class="description">Preview your ad</div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="content">
+                                <div class="title">DONE!</div>
+                                <div class="description">View your ad online</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Form Steps End-->
+                    <!--Insert Ad Form-->
+                    <div class="ui segment">
+                        <form class="ui form insert-ad">
+                            <div class="ui stackable grid">
+                                <!--Form Field-->
+                                <div class="three wide column field">
+                                    <label>Type</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div class="inline fields">
+                                        <div class="field">
+                                            <div class="ui radio checkbox">
+                                                <input type="radio" id="c_ad" checked="" name="company_ad" value="0">
+                                                <label for="c_ad">Private</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui radio checkbox">
+                                                <input type="radio" id="c_ad2" name="company_ad" value="1">
+                                                <label for="c_ad2">Company</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column required field">
+                                    <label>Name</label>
+                                </div>
+                                <div class="thirteen wide column field">
+                                    <input type="text" name="name" placeholder="Name">
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column required field">
+                                    <label>Email</label>
+                                </div>
+                                <div class="thirteen wide column field">
+                                    <input type="text" name="email" placeholder="Email">
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column field">
+                                    <label>Phone</label>
+                                </div>
+                                <div class="thirteen wide column field">
+                                    <input type="text" name="phone" placeholder="Phone number">
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column">
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div class="ui checkbox">
+                                        <input id="example-id" type="checkbox" checked="">
+                                        <label for="example-id">View on site</label>
+                                    </div>
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column required field">
+                                    <label>Region</label>
+                                </div>
+                                <div class="thirteen wide column field">
+                                    <select name="state" class="states" name="states" id="stateId">
+                                        <option value="">Select State</option>
+                                    </select>
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column required field">
+                                    <label>City</label>
+                                </div>
+                                <div class="thirteen wide column field">
+                                    <select name="city" class="cities" name="cities" id="cityId">
+                                        <option value="">Select City</option>
+                                    </select>
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column required field">
+                                    <label>Category</label>
+                                </div>
+                                <div class="thirteen wide column field">
+                                    <select class="ui dropdown" name="category_group" id="category_group">
+                                        <option value="">All categories</option>
+                                        <option value="1000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat1000">
+                                            Real estate
+                                        </option>
+                                        <option value="1020" id="cat1020">
+                                            Houses
+                                        </option>
+                                        <option value="1010" id="cat1010">
+                                            Apartments
+                                        </option>
+                                        <option value="1030" id="cat1030">
+                                            Vacation homes
+                                        </option>
+                                        <option value="1050" id="cat1050">
+                                            Offices
+                                        </option>
+                                        <option value="1080" id="cat1080">
+                                            Land
+                                        </option>
+                                        <option value="1100" id="cat1100">
+                                            Flatmates/Paying Guest
+                                        </option>
+                                        <option value="1090" id="cat1090">
+                                            Other
+                                        </option>
+                                        <option value="2000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat2000">
+                                            Vehicles
+                                        </option>
+                                        <option value="2010" id="cat2010">
+                                            Cars
+                                        </option>
+                                        <option value="2030" id="cat2030">
+                                            Motorcycles
+                                        </option>
+                                        <option value="2040" id="cat2040">
+                                            Accessories &amp; parts
+                                        </option>
+                                        <option value="2080" id="cat2080">
+                                            Trucks
+                                        </option>
+                                        <option value="2070" id="cat2070">
+                                            Other vehicles
+                                        </option>
+                                        <option value="3000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat3000">
+                                            Home &amp; Personal items
+                                        </option>
+                                        <option value="3040" id="cat3040">
+                                            Home &amp; Garden
+                                        </option>
+                                        <option value="3050" id="cat3050">
+                                            Clothing
+                                        </option>
+                                        <option value="3030" id="cat3030">
+                                            For Kids (Toys &amp; Clothes)
+                                        </option>
+                                        <option value="3060" id="cat3060">
+                                            Jewelry &amp; Watches
+                                        </option>
+                                        <option value="4000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat4000">
+                                            Leisure, Sports &amp; hobby
+                                        </option>
+                                        <option value="4010" id="cat4010">
+                                            Hobbies
+                                        </option>
+                                        <option value="4020" id="cat4020">
+                                            Sports &amp; Bicycles
+                                        </option>
+                                        <option value="4040" id="cat4040">
+                                            Movies, Books &amp; Magazines
+                                        </option>
+                                        <option value="4030" id="cat4030">
+                                            Pets
+                                        </option>
+                                        <option value="4090" id="cat4090">
+                                            Tickets
+                                        </option>
+                                        <option value="4060" id="cat4060">
+                                            Art &amp; Collectibles
+                                        </option>
+                                        <option value="4070" id="cat4070">
+                                            Music &amp; Instruments
+                                        </option>
+                                        <option value="5000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat5000">
+                                            Electronics
+                                        </option>
+                                        <option value="5030" id="cat5030">
+                                            Computers &amp; Accessories
+                                        </option>
+                                        <option value="5020" id="cat5020">
+                                            TV, Audio, Video, Cameras
+                                        </option>
+                                        <option value="5010" id="cat5010">
+                                            Cellphones &amp; gadgets
+                                        </option>
+                                        <option value="5040" id="cat5040">
+                                            Video games &amp; consoles
+                                        </option>
+                                        <option value="6000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat6000">
+                                            Jobs &amp; Services
+                                        </option>
+                                        <option value="6010" id="cat6010">
+                                            Job offers
+                                        </option>
+                                        <option value="6020" id="cat6020">
+                                            Resumes
+                                        </option>
+                                        <option value="6030" id="cat6030">
+                                            Services
+                                        </option>
+                                        <option value="6040" id="cat6040">
+                                            Classes
+                                        </option>
+                                        <option value="6090" id="cat6090">
+                                            Professional/Office equipment
+                                        </option>
+                                        <option value="7000" style="background-color: rgb(220, 220, 195); font-weight: bold;" disabled="disabled" id="cat7000">
+                                            ----
+                                        </option>
+                                        <option value="7010" id="cat7010">
+                                            Other
+                                        </option>
+                                    </select>
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column field">
+                                    <label>Type</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div id="type_container" class="inline fields">
+                                        <div class="field">
+                                            <div class="ui radio checkbox">
+                                                <input type="radio" id="for_sale" name="frequency" checked="checked">
+                                                <label for="for_sale">For sale</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui radio checkbox">
+                                                <input type="radio" id="wanted" name="frequency">
+                                                <label for="wanted">Want to buy</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Form Field-->
+                            </div>
+                            <div class="ui grid" id="category_contents">
+                                <!--Form Field-->
+                                <div class="three wide column required field">
+                                    <label>Ad Title</label>
+                                </div>
+                                <div class="thirteen wide column field">
+                                    <input name="title" type="text">
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column required field">
+                                    <label>Ad Content</label>
+                                </div>
+                                <div class="thirteen wide column field">
+									<div class="field" id="ad_content">
+										<!-- Create the editor container -->
+										<div id="snow-container">
+											<!--Message Goes Here-->
+											<p><strong>Hello,</strong></p>
+											<p>Insert your ad content here.</p>
+											<!--Message End Here-->
+										</div>
+										<!-- /Create the editor container -->	
+									</div>									
+                                </div>
+                                <!--/Form Field-->
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column field">
+                                    <label>Price</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div class="ui right labeled input">
+                                        <div class="ui label">Rs</div>
+                                        <input type="text" placeholder="Amount">
+                                        <div class="ui basic label">.00</div>
+                                    </div>
+                                </div>
+                                <!--/Form Field-->
+                            </div>
+                            <div class="ui grid">
+                                <!--Form Field-->
+                                <div class="three wide column field">
+                                    <label>Image 1</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <input name="image1" size="35" id="image1" type="file">
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column field">
+                                    <label>Image 2</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <input name="image2" size="35" id="image2" type="file">
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column field">
+                                    <label>Image 3</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <input name="image3" size="35" id="image3" type="file">
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column field">
+                                    <label>Image 4</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <input name="image4" size="35" id="image4" type="file">
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column field">
+                                    <label>Image 5</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <input name="image5" size="35" id="image5" type="file">
+                                </div>
+                                <!--/Form Field-->
+                                <!--Form Field-->
+                                <div class="three wide column required field">
+                                    <label>Terms</label>
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div class="inline field">
+                                        <div class="ui checkbox">
+                                            <input type="checkbox" name="checkbox">
+                                            <label>I agree to the terms and conditions</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Form Field-->
+                                <!--Contiue Button-->
+                                <div class="three wide column ">
+                                </div>
+                                <div class="thirteen wide column">
+                                    <div class="ui submit green button">Contiue</div>
+                                </div>
+                                <!--/Contiue Button-->
+                                <div class="sixteen wide column">
+                                    <div class="ui error message"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--/Insert Ad Form End-->
+                </div>
+                <!--/Single Ad Text End-->
+                <!--Google Ad Code Here-->
+                <div class="four wide column">
+                    <div class="ad-area-small">
+                        <div class="googel-ad-small">
+                            <img class="ui centered image" src="images/googel_add_new.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!--Google Ad Code End-->
+            </div>
+            <!--/Main Text End-->
+            <br>
+            <!--Member Area-->
+            <div class="ui stackable divided grid members">
+                <div class="eight wide column">
+                    <div class="ui items">
+                        <div class="item new-user">
+                            <div class="middle aligned content">
+                                <h2>NEW USER</h2> NEW USER CAN REGISTER HERE
+                            </div>
+                            <div class="signup-btn">
+                                <a class="teal large ui button" href="sign-up.html">SIGNUP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight wide column">
+                    <div class="ui items">
+                        <div class="item already-user">
+                            <div class="middle aligned content">
+                                <h2>ALREADY MEMBER</h2> PLEASE LOGIN HERE
+                            </div>
+                            <div class="right item signup-btn">
+                                <a class="teal large ui button" href="login.html">LOGIN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Member Area End-->
+        </div>
+        <!--/Main Text End-->
+        <!--Footer-->
+        <div class="ui inverted vertical footer segment">
+            <div class="ui left aligned container">
+                <div class="ui stackable inverted divided grid">
+                    <div class="three wide column">
+                        <h3 class="ui inverted header">CATEGORY</h3>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Astrology</a>
+                            <a href="#" class="item">Automobile</a>
+                            <a href="#" class="item">Babycare</a>
+                            <a href="#" class="item">Car</a>
+                            <a href="#" class="item">Computer</a>
+                            <a href="#" class="item">Electronics</a>
+                            <a href="#" class="item">Fashion</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h3 class="ui inverted header">BRANDS</h3>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Apple</a>
+                            <a href="#" class="item">ASUS</a>
+                            <a href="#" class="item">Blackberry</a>
+                            <a href="#" class="item">Bacca Bucci</a>
+                            <a href="#" class="item">Canon</a>
+                            <a href="#" class="item">Celkon</a>
+                            <a href="#" class="item">Dell</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h3 class="ui inverted header">MOBILE PHONES</h3>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Mobile Phones</a>
+                            <a href="#" class="item">Android Phones</a>
+                            <a href="#" class="item">Multi Sim Phones</a>
+                            <a href="#" class="item">Phablets</a>
+                            <a href="#" class="item">Top Selling Mobile Phones</a>
+                            <a href="#" class="item">Micromax</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h3 class="ui inverted header">INFORMATION</h3>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Popular searches</a>
+                            <a href="#" class="item">Archive</a>
+                            <a href="#" class="item">Sitemap</a>
+                            <a href="#" class="item">Featured Ads</a>
+                            <a href="#" class="item">Terms of Use</a>
+                            <a href="#" class="item">Help & Contact Use		</a>
+                        </div>
+                    </div>
+                    <div class="four wide column">
+                        <h3 class="ui inverted header">FOLLOW US</h3>
+                        <div class="ui tiny images sociables">
+                            <a class="item" href="#"><img class="ui image" src="images/facebook_icon.png"></a>
+                            <a class="item" href="#"><img class="ui image" src="images/googleplus_icon.png"></a>
+                            <a class="item" href="#"><img class="ui image" src="images/twitter_icon.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Footer End-->
+        <!--Copyright-->
+        <div class="ui inverted vertical copyright center aligned segment">
+            <div class="ui horizontal inverted small divided link list">
+                <a class="item" href="#">&copy; 2021 Kool Business </a>
+            </div>
+        </div>
+        <!--/Copyright End-->
+        <!--Scroll-To-Top-->
+        <div class="scroll-top-wrapper show">
+            <span class="scroll-top-inner">
+				<i class="chevron up icon"></i>
+			</span>
+        </div>
+        <!--Scroll-To-Top End-->
+    </div>
+    <!--/Main Wrapper End-->
+	<!-- Include the Quill library -->
+	<script src="https://cdn.quilljs.com/1.3.3/quill.js"></script>
+
+	<!-- Initialize Quill editor -->
+	<script>
+		var snowQuill = new Quill('#snow-container', {
+			placeholder: 'Compose an epic...',
+			modules: {
+			  toolbar: [
+				[{ header: [] }],
+				['bold', 'italic', 'underline', 'link'],
+				[{ align: ['','right','center','justify']}],
+				[{ list: 'ordered' }, { list: 'bullet' }],				
+				[{ color: [] }, { background: [] }],				
+				['clean']
+			  ]
+			},
+			theme: 'snow'
+		  });
+	</script>	
+</body>
+</html>

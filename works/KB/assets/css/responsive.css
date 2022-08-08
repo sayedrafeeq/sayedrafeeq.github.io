@@ -1,0 +1,203 @@
+/*******************************
+		  RESPONSIVE CSS
+*******************************/
+
+@media only screen and (max-width: 767px) {
+	.ui.stackable.divided:not(.vertically).grid>.column:not(.row) {
+		padding-top: 1rem !important;
+		padding-bottom: 1rem !important;
+		text-align: center;
+	}
+	.header-area .ui.menu .item:before {
+		background-color: transparent;
+	}
+	.logo {
+		display: block;
+		margin: 0 auto;
+	}
+	.search-form {
+		margin: 0;
+	}
+	.masthead-text {
+		margin-top: 0;
+	}
+	.masthead h2 {
+		line-height: normal;
+	}
+	.subhead h2 {
+		line-height: 50px;
+	}
+	.search-form .ui.selection.dropdown {
+		height: 40px;
+	}
+	.popular-categories .row>.column {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.ad-area-small {
+		margin: 20px 0 -10px 0;
+	}
+	.ui.inverted.subhead {
+		padding: 1em 0;
+	}
+	/***** Header Area ****/
+	.ui.menu:not(.vertical) .right.item,
+	.ui.menu:not(.vertical) .right.menu,
+	.ui.menu:not(.vertical) .item {
+		display: table;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.free-ad {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.header-area .ui.button {
+		margin-left: 0;
+	}
+	.ui.menu>.container {
+		display: block;
+	}
+	.ui.menu .item:before {
+		background-color: transparent;
+		width: 0;
+	}
+	.header-right {
+		padding-left: 10px !important;
+	}
+	.ui .ads-wrapper .middle.aligned.content {
+		padding: 1.5em;
+		text-align: center;
+		float: none;
+	}
+	.ui .item.post-ads {
+		padding: 2em 0 0 0;
+	}
+	.ui .item.post-ads p {
+		color: #666666;
+	}
+	.classifieds-list .column {
+		width: 100% !important;
+	}
+	.popular-categories .cat-column {
+		width: 50% !important;
+	}
+	.popular-categories .last-class {
+		width: 100% !important;
+	}
+	.pagination-wrap {
+		text-align: center;
+	}
+	.banner-content {
+		text-align: left;
+	}
+	a.menu-item {
+		display: block;
+		border-bottom: 1px solid #f985c1;
+		width: 100%;
+	}
+	.ui.ordered.steps {
+		width: 100%;
+	}
+	.ui.steps .step,
+	.ui.step {
+		border-bottom: 1px solid #eeeeee;
+	}
+	.tredAds-inner .owl-item {
+		float: none !important;
+		width: 252px !important;
+	}
+	/***** My Account Section CSS ****/
+	.ui.vertical.menu {
+		width: auto;
+	}
+	.ui.skyscraper.ad {
+		display: none;
+	}
+	.scroll-top-wrapper {
+		right: 15px;
+	}
+	.welcome-msg span {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.popular-categories .row>.column {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.table_wrapper {
+		position: relative;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+	.ad-area-large {
+		width: auto;
+	}
+}
+
+/* Email Advertiser Model Box */
+@media only screen and (min-width: 1200px) {
+	.ui.modal {
+		width: 600px;
+		left: 60%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.ui.modal {
+		width: 600px;
+		left: 60%;
+	}
+}
+
+/* iPad in Portrait  CSS*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	.ui.skyscraper.ad {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 270px) and (max-width: 480px) {
+	.subhead h2 {
+		font-size: 25px;
+		line-height: 40px;
+	}
+	.ui.inverted.subhead {
+		padding: 1em 0;
+	}
+	.ui.pagination.menu {
+		display: block;
+	}
+	.ui.pagination.menu .item {
+		border-bottom: 1px solid #eee;
+		display: block;
+	}
+	.search-form input[type="text"] {
+		font-size: 10px;
+		width: 110px;
+	}
+	.search-form .ui.selection.dropdown {
+		font-size: 11px;
+	}
+}
+
+/***** Header Area ****/
+@media only screen and (min-width: 290px) and (max-width: 479px) {
+	.slide-cont {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+	.slide-cont {
+		width: 90%;
+	}
+}

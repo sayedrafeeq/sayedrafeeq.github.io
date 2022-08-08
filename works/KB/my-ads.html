@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Standard Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<!-- Site Properties -->
+	<title>My Ads - KoolBusiness&trade; - High Quality Classifieds</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" type="text/css" href="assets/css/semantic.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.semanticui.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.css">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/semantic.js"></script>
+	<script src="assets/js/owl.carousel.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/dataTables.semanticui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+	<!--Main Wrapper-->
+	<div class="main-wrap">
+		<!--Tapbar-->
+		<div class="ui inverted topbar">
+			<div class="ui container">
+				<div class="ui stackable divided grid">
+					<div class="eight wide column">
+						<div class="welcome-msg">
+							Welcome to <strong>KoolBusiness </strong> <span>- High Quality Classifieds in INDIA.</span>
+						</div>
+					</div>
+					<div class="eight wide column right aligned">
+						<div class="social-icons">
+							<a class="item-inline" href="#"><img class="ui image" src="images/socials/facebook.png"></a>
+							<a class="item-inline" href="#"><img class="ui image" src="images/socials/google.png"></a>
+							<a class="item-inline" href="#"><img class="ui image" src="images/socials/linkedin.png"></a>
+							<a class="item-inline" href="#"><img class="ui image" src="images/socials/twitter.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/Tapbar End-->
+		<!--Header Area-->
+		<div class="ui menu header-area header-spacing">
+			<div class="ui container">
+				<div class="logo-area">
+					<a href="index.html" class="header">
+						<img class="logo item" src="images/kool_business_logo.png">
+					</a>
+				</div>
+				<div class="right item header-right">
+					<div class="ui horizontal list">
+						<div class="item">
+							<img class="ui mini circular image user-avatar" src="images/sign-out.png">
+							<div class="content">
+								<div class="ui sub header my-account">
+									<a href="login.html">Signout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/Header End-->
+		<!--Menu Area-->
+		<div class="ui inverted menu header-area">
+			<div class="ui container">
+				<a href="index.html" class="item menu-item">Home</a>
+				<a href="my-ads.html" class="item menu-item active">My Account <i class="angle right icon"></i>My Ads</a>
+				<a href="#" class="item menu-item right floated"><strong>Username:</strong>&nbsp; sayedrafeeq@gmail.com</a>
+			</div>
+		</div>
+		<!--Menu Area End-->
+		<!--Master Head-->
+		<div class="masthead-shadow">
+			<div class="ui inverted vertical subhead herohead center aligned segment">
+				<div class="ui text container masthead-text">
+					<h2>Manage your <span>Ads</span>!</h2>
+				</div>
+			</div>
+		</div>
+		<!--/Master Head End-->
+
+		<div class="ui main text container" id="my_ads">
+			<!--My Account Section-->
+			<div class="ui tablet stackable grid my_account_wrapper">
+				<div class="five wide tablet four wide computer column menu_wrapper">
+					<div class="menu-section">
+						<div class="ui vertical menu sidemenu">
+							<div class="item"><strong>MY ACCOUNT</strong></div>
+							<a class="item active" href="my-ads.html#my_ads"><i class="browser outline icon"></i>My Ads</a>
+							<a class="item" href="messages.html#my_messages"><i class="mail outline icon"></i>Messages</a>
+							<a class="item" href="profile.html#profile"><i class="user icon"></i>Profile</a>
+							<a class="item" href="edit-profile.html#edit_profile"><i class="write icon"></i>Edit Profile</a>
+							<a class="item" href="change-password.html#change_password"><i class="unlock alternate icon"></i>Change Password</a>
+							<a class="item" href="payments.html#payments"><i class="payment icon"></i>Payments</a>
+							<a class="item" href="deactivate-account.html#deactivate"><i class="settings icon"></i>Advanced</a>
+							<a class="item" href="#"><i class="external icon"></i>Signout</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="eleven wide tablet twelve wide column myads-wrapper">
+					<!--Profile Section Form-->
+					<h2>My Ads:</h2>
+					<p>Manage yoour ad details.</p>
+					<div class="ui section divider"></div>
+					<!--My Ads Table-->
+					<div class="table_wrapper">
+						<table id="myAds" class="ui celled table" cellspacing="0" width="100%">
+							<thead>
+								<tr>
+									<th>S.No.</th>
+									<th>Author</th>
+									<th>Ad Title</th>
+									<th>Published Date</th>
+									<th>Manage Ads</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Frontend Developer - AngularJS/Javascript (1-5 yrs)</a></td>
+									<td>2011/04/25</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Senior Software Engineer - Mobile Applications (2-6 yrs)</a></td>
+									<td>2011/07/25</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Infosys BPO - UI Developer - HTML/CSS (2-4 yrs)</a></td>
+									<td>2009/01/12</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">JavaScript Developer - jQuery/OOPS (2-3 yrs)</a></td>
+									<td>2012/03/29</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">iOS Lead Engineer - Mobile Application Development - Objective C (7-12 yrs)</a></td>
+									<td>2008/11/28</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Visual Designer - Adobe Creative Suite - eCommerce Startup (3-6 yrs)</a></td>
+									<td>2012/12/02</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Full Stack Developer - PHP/MySQL (0-4 yrs)</a></td>
+									<td>2012/08/06</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Senior UX Designer - Photoshop (4-6 yrs)</a></td>
+									<td>2010/10/14</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Front End Developer - HTML/CSS/Javascript (3-5 yrs)</a></td>
+									<td>2009/09/15</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Python Developer - Scripting and Development (2-3 yrs)</a></td>
+									<td>2008/12/13</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Web Developer - HTML/Bootstrap (1-2 yrs)</a></td>
+									<td>2008/12/19</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui red button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Graphic Designer/Visualizer - Photoshop/CorelDRAW (1-2 yrs)</a></td>
+									<td>2013/03/03</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui red button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Software Engineer/Senior Software Engineer - PHP (2-3 yrs)</a></td>
+									<td>2008/10/16</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">UI/UX Designer - Photoshop/Illustrator (3-4 yrs)</a></td>
+									<td>2012/12/18</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Senior/Team Lead Laravel Developer - PHP/MySQL (1-5 yrs)</a></td>
+									<td>2010/03/17</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">UI/UX Designer - HTML/CSS/Javascript (2-5 yrs)</a></td>
+									<td>2012/11/27</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">UI Developer - AngularJS (2-5 yrs)</a></td>
+									<td>2010/06/09</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td>
+										<<a href="single-ad.html" target="_blank">Python Developer - Data Structure/Algorithm (1-2 yrs)</a>
+									</td>
+									<td>2009/04/10</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Java Developer - Multithreading (2-7 yrs)</a></td>
+									<td>2012/10/13</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Sayed Rafeeq</td>
+									<td><a href="single-ad.html" target="_blank">Full Stack Engineer - Java/Scala/Python (4-12 yrs)</a></td>
+									<td>2012/09/26</td>
+									<td>
+										<div class="ui buttons">
+											<a class="ui blue button edit" href="edit-my-ad.html#my_ads"><i class="edit icon"></i></a>
+											<button class="ui orange button delete"><i class="trash outline icon"></i></button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--/My Ads Table-->
+
+					<!--/Profile Section Form-->
+				</div>
+			</div>
+			<!--/My Account Section-->
+		</div>
+
+		<!--Footer-->
+		<div class="ui inverted vertical footer segment">
+			<div class="ui left aligned container">
+				<div class="ui stackable inverted divided grid">
+					<div class="three wide column">
+						<h3 class="ui inverted header">CATEGORY</h3>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Astrology</a>
+							<a href="#" class="item">Automobile</a>
+							<a href="#" class="item">Babycare</a>
+							<a href="#" class="item">Car</a>
+							<a href="#" class="item">Computer</a>
+							<a href="#" class="item">Electronics</a>
+							<a href="#" class="item">Fashion</a>
+						</div>
+					</div>
+					<div class="three wide column">
+						<h3 class="ui inverted header">BRANDS</h3>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Apple</a>
+							<a href="#" class="item">ASUS</a>
+							<a href="#" class="item">Blackberry</a>
+							<a href="#" class="item">Bacca Bucci</a>
+							<a href="#" class="item">Canon</a>
+							<a href="#" class="item">Celkon</a>
+							<a href="#" class="item">Dell</a>
+						</div>
+					</div>
+					<div class="three wide column">
+						<h3 class="ui inverted header">MOBILE PHONES</h3>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Mobile Phones</a>
+							<a href="#" class="item">Android Phones</a>
+							<a href="#" class="item">Multi Sim Phones</a>
+							<a href="#" class="item">Phablets</a>
+							<a href="#" class="item">Top Selling Mobile Phones</a>
+							<a href="#" class="item">Micromax</a>
+						</div>
+					</div>
+					<div class="three wide column">
+						<h3 class="ui inverted header">INFORMATION</h3>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Popular searches</a>
+							<a href="#" class="item">Archive</a>
+							<a href="#" class="item">Sitemap</a>
+							<a href="#" class="item">Featured Ads</a>
+							<a href="#" class="item">Terms of Use</a>
+							<a href="#" class="item">Help & Contact Use		</a>
+						</div>
+					</div>
+					<div class="four wide column">
+						<h3 class="ui inverted header">FOLLOW US</h3>
+						<div class="ui tiny images sociables">
+							<a class="item" href="#"><img class="ui image" src="images/facebook_icon.png"></a>
+							<a class="item" href="#"><img class="ui image" src="images/googleplus_icon.png"></a>
+							<a class="item" href="#"><img class="ui image" src="images/twitter_icon.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/Footer End-->
+		<!--Copyright-->
+		<div class="ui inverted vertical copyright center aligned segment">
+			<div class="ui horizontal inverted small divided link list">
+				<a class="item" href="#">&copy; 2021 Kool Business </a>
+			</div>
+		</div>
+		<!--/Copyright End-->
+		<!--Scroll-To-Top-->
+		<div class="scroll-top-wrapper show">
+			<span class="scroll-top-inner">
+				<i class="chevron up icon"></i>
+			</span>
+		</div>
+		<!--Scroll-To-Top End-->
+	</div>
+	<!--/Main Wrapper End-->
+	<!--DataTable CustomJS-->
+	<script>
+		$(document).ready(function () {
+            var table = $('#myAds').DataTable({
+                "columnDefs": [{
+                    "searchable": false,
+                    "orderable": false,
+                    "targets": 0
+                }],
+                "order": [
+                    [1, 'asc']
+                ]
+            });
+            table.on('order.dt search.dt', function () {
+                table.column(0, {
+                    search: 'applied',
+                    order: 'applied'
+                }).nodes().each(function (cell, i) {
+                    cell.innerHTML = i + 1;
+                });
+            }).draw();
+
+			$('#myAds').on('click', '.delete', function () {
+				var btn = this;
+
+				swal({
+					title: "Do you want to delete?",
+					text: "Ad from your Dashboard.",
+					showCancelButton: true,
+					confirmButtonColor: "#DD6B55",
+					confirmButtonText: "Yes, Delete",
+					cancelButtonText: "Cancel",
+					closeOnConfirm: false,
+					closeOnCancel: false
+				}, function (isConfirm) {
+					if (isConfirm) {
+						swal("Successfully!", "Removed your Ad", "success");
+						table.row($(btn).parents('tr')).remove().draw(false);
+					} else {
+						swal("Cancel", "Go to your Dashboard.", "error");
+					}
+				});
+			});
+		});
+	</script>
+	<!--/DataTable CustomJS-->
+</body>
+
+</html>
